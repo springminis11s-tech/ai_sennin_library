@@ -1,0 +1,15 @@
+# robots.txt - AI仙人の知識図書館
+# https://ai-sennin-library.example.com/
+
+User-agent: *
+Allow: /
+
+# CSS・JS・画像へのアクセスを許可（レンダリング用）
+Allow: /style.css
+Allow: /script.js
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.webp$
+
+# サイトマップの場所
+Sitemap: https://ai-sennin-library.example.com/sitemap.xml

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Primary Meta Tags -->
+  <title>AI仙人の知識図書館 | AI活用・株式投資・Mac活用・読書メモのデジタルアーカイブ</title>
+  <meta name="description" content="AI仙人の知識図書館は、AI活用術（ChatGPT・Claude・Gemini）、株式投資戦略、Mac活用テクニック、読書メモを体系的にまとめたデジタル図書館です。初心者からエキスパートまで、知識の探索をサポートします。">
+  <meta name="keywords" content="AI活用, ChatGPT, Claude, Gemini, プロンプトエンジニアリング, 株式投資, NISA, iDeCo, Mac活用, macOS, 読書メモ, デジタル図書館, AI仙人">
+  <meta name="author" content="AI仙人">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://ai-sennin-library.example.com/">
+
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ai-sennin-library.example.com/">
+  <meta property="og:title" content="AI仙人の知識図書館 | AI・投資・Mac・読書の知識アーカイブ">
+  <meta property="og:description" content="AI活用術、株式投資戦略、Mac活用テクニック、読書メモを体系的にまとめたデジタル図書館。古今東西の知恵を集め、未来へつなぐ知識のアーカイブです。">
+  <meta property="og:image" content="https://ai-sennin-library.example.com/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI仙人の知識図書館 - デジタル知識アーカイブ">
+  <meta property="og:site_name" content="AI仙人の知識図書館">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI仙人の知識図書館 | AI・投資・Mac・読書の知識アーカイブ">
+  <meta name="twitter:description" content="AI活用術、株式投資戦略、Mac活用テクニック、読書メモを体系的にまとめたデジタル図書館。">
+  <meta name="twitter:image" content="https://ai-sennin-library.example.com/ogp.png">
+  <meta name="twitter:image:alt" content="AI仙人の知識図書館 - デジタル知識アーカイブ">
+
+  <!-- SEO: Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "AI仙人の知識図書館",
+        "alternateName": "AI Sennin Knowledge Library",
+        "url": "https://ai-sennin-library.example.com/",
+        "description": "AI活用術、株式投資戦略、Mac活用テクニック、読書メモを体系的にまとめたデジタル図書館",
+        "inLanguage": "ja",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://ai-sennin-library.example.com/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "name": "AI仙人の知識図書館",
+        "description": "AI活用・株式投資・Mac活用・読書メモの4カテゴリで構成されたデジタル知識図書館",
+        "url": "https://ai-sennin-library.example.com/",
+        "inLanguage": "ja",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "AI仙人の知識図書館"
+        },
+        "about": [
+          { "@type": "Thing", "name": "AI活用", "description": "ChatGPT・Claude・Geminiの活用術、プロンプトエンジニアリング、AI業務自動化" },
+          { "@type": "Thing", "name": "株式投資", "description": "ファンダメンタルズ分析、テクニカル分析、NISA・iDeCo活用" },
+          { "@type": "Thing", "name": "Mac活用", "description": "macOSショートカット、おすすめアプリ、Automator活用" },
+          { "@type": "Thing", "name": "読書メモ", "description": "ビジネス書レビュー、技術書メモ、名著から学ぶ教訓" }
+        ],
+        "dateModified": "2026-05-18"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://ai-sennin-library.example.com/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">
+        <svg class="logo-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h5"/></svg>
+        <span class="logo-text">AI仙人の知識図書館</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#categories" class="nav-link">蔵書カテゴリ</a>
+        <a href="#features" class="nav-link">特徴</a>
+        <a href="#about" class="nav-link">図書館について</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="テーマ切替">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge animate-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Digital Knowledge Archive
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line animate-item">AI仙人の</span>
+        <span class="hero-title-line accent animate-item">知識図書館</span>
+      </h1>
+      <p class="hero-subtitle animate-item">
+        古今東西の知恵を集め、未来へつなぐデジタル書架。<br>
+        AI・投資・Mac・読書 ── 四つの知の扉を開こう。
+      </p>
+      <div class="hero-actions animate-item">
+        <a href="#categories" class="hero-cta primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          蔵書を探す
+        </a>
+        <a href="#about" class="hero-cta secondary">詳しく見る</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator animate-item">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- 検索バー -->
+  <div class="search-section" id="searchSection">
+    <div class="container">
+      <div class="search-bar">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="キーワードで蔵書を検索..." autocomplete="off">
+        <button class="search-clear" id="searchClear" aria-label="クリア">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <p class="search-results-text" id="searchResultsText"></p>
+    </div>
+  </div>
+
+  <!-- カテゴリセクション -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">— Collection —</span>
+        <h2 class="section-title">蔵書カテゴリ</h2>
+        <p class="section-desc">四つの書架から、あなたの探求する知識を見つけてください。</p>
+      </div>
+
+      <div class="category-grid">
+        <!-- AI活用 -->
+        <article class="category-card" id="card-ai" data-href="#ai-detail">
+          <div class="card-glow"></div>
+          <div class="card-accent-line"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="card-icon-wrapper">
+                <svg class="card-svg-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 15H8a6 6 0 0 0-6 6v1h20v-1a6 6 0 0 0-6-6z"/><circle cx="12" cy="6" r="1.5" fill="currentColor"/><path d="M9 11.5l3 2 3-2"/></svg>
+              </div>
+              <div class="card-number">01</div>
+            </div>
+            <h3 class="card-title">AI活用</h3>
+            <span class="card-article-count">17 記事</span>
+            <p class="card-desc">最新のAI技術やツールの使いこなし方、プロンプトエンジニアリング、業務効率化のヒントを収録。</p>
+            <ul class="card-topics">
+              <li><span class="topic-dot"></span>ChatGPT / Claude 活用術</li>
+              <li><span class="topic-dot"></span>プロンプト設計テクニック</li>
+              <li><span class="topic-dot"></span>AI × 業務自動化</li>
+              <li><span class="topic-dot"></span>画像・動画生成AI</li>
+            </ul>
+            <div class="card-footer">
+              <span class="card-tag">Technology</span>
+              <span class="card-arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 株式投資 -->
+        <article class="category-card" id="card-stock" data-href="stock.html">
+          <div class="card-glow"></div>
+          <div class="card-accent-line"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="card-icon-wrapper">
+                <svg class="card-svg-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+              </div>
+              <div class="card-number">02</div>
+            </div>
+            <h3 class="card-title">株式投資</h3>
+            <span class="card-article-count">8 記事</span>
+            <p class="card-desc">投資戦略、銘柄分析、マーケット動向の読み解き方、長期資産形成の知恵を収めた書架。</p>
+            <ul class="card-topics">
+              <li><span class="topic-dot"></span>ファンダメンタルズ分析</li>
+              <li><span class="topic-dot"></span>テクニカル分析入門</li>
+              <li><span class="topic-dot"></span>高配当・優待戦略</li>
+              <li><span class="topic-dot"></span>NISA / iDeCo 活用</li>
+            </ul>
+            <div class="card-footer">
+              <span class="card-tag">Finance</span>
+              <span class="card-arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Mac活用 -->
+        <article class="category-card" id="card-mac" data-href="mac.html">
+          <div class="card-glow"></div>
+          <div class="card-accent-line"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="card-icon-wrapper">
+                <svg class="card-svg-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><circle cx="12" cy="14" r="1" fill="currentColor"/></svg>
+              </div>
+              <div class="card-number">03</div>
+            </div>
+            <h3 class="card-title">Mac活用</h3>
+            <span class="card-article-count">5 記事</span>
+            <p class="card-desc">macOSの隠れた機能、おすすめアプリ、ワークフロー最適化のテクニック集。</p>
+            <ul class="card-topics">
+              <li><span class="topic-dot"></span>macOS ショートカット集</li>
+              <li><span class="topic-dot"></span>おすすめアプリ厳選</li>
+              <li><span class="topic-dot"></span>Automator / ショートカット</li>
+              <li><span class="topic-dot"></span>開発環境セットアップ</li>
+            </ul>
+            <div class="card-footer">
+              <span class="card-tag">Apple</span>
+              <span class="card-arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 読書メモ -->
+        <article class="category-card" id="card-book" data-href="books.html">
+          <div class="card-glow"></div>
+          <div class="card-accent-line"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="card-icon-wrapper">
+                <svg class="card-svg-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="card-number">04</div>
+            </div>
+            <h3 class="card-title">読書メモ</h3>
+            <span class="card-article-count">10 記事</span>
+            <p class="card-desc">ビジネス書から文学作品まで、心に残る一冊の要約と気づきを記録した読書の足跡。</p>
+            <ul class="card-topics">
+              <li><span class="topic-dot"></span>ビジネス書レビュー</li>
+              <li><span class="topic-dot"></span>自己啓発・哲学</li>
+              <li><span class="topic-dot"></span>技術書メモ</li>
+              <li><span class="topic-dot"></span>名著から学ぶ教訓</li>
+            </ul>
+            <div class="card-footer">
+              <span class="card-tag">Books</span>
+              <span class="card-arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI活用 詳細セクション -->
+  <section class="ai-detail" id="ai-detail">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">— AI Mastery —</span>
+        <h2 class="section-title">AI活用 ── 3つの重要トピック</h2>
+        <p class="section-desc">AIを使いこなすために、まず押さえておきたい基本をやさしく解説します。</p>
+      </div>
+      <div class="ai-topics-grid">
+
+        <!-- トピック1: AIモデルの使い分け -->
+        <div class="ai-topic-card fade-in-item">
+          <div class="ai-topic-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="8" height="8" rx="2"/>
+              <rect x="14" y="2" width="8" height="8" rx="2"/>
+              <rect x="2" y="14" width="8" height="8" rx="2"/>
+              <rect x="14" y="14" width="8" height="8" rx="2"/>
+            </svg>
+          </div>
+          <div class="ai-topic-content">
+            <h3>🧩 AIモデルの使い分け</h3>
+            <p class="ai-topic-summary">
+              AIにはいろんな種類（モデル）があって、それぞれ得意なことが違います。
+              たとえるなら、「国語が得意な友だち」「数学が得意な友だち」がいるのと同じ！
+            </p>
+            <ul class="ai-topic-list">
+              <li>
+                <strong>ChatGPT</strong> ── アイデア出しやビジネスの相談が得意。なんでも気軽に聞ける「万能タイプ」。
+              </li>
+              <li>
+                <strong>Gemini</strong> ── 画像の認識・生成や、きちんとした文章を作るのが得意。Googleの力で最新情報にも強い。
+              </li>
+              <li>
+                <strong>Claude</strong> ── プログラムのコードを書いたり、長い文章を理解するのが得意な「エンジニア向き」。
+              </li>
+            </ul>
+            <div class="ai-topic-tip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>ポイント：迷ったらまずChatGPTから始めればOK！</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- トピック2: AIと融合する使い方 -->
+        <div class="ai-topic-card fade-in-item">
+          <div class="ai-topic-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <div class="ai-topic-content">
+            <h3>🤝 AIと「融合」する使い方</h3>
+            <p class="ai-topic-summary">
+              AIは「1回だけ質問する道具」じゃなくて、毎日おしゃべりする「パートナー」にすると、
+              どんどん自分のことを理解してくれて、もっと役に立つようになります。
+            </p>
+            <ul class="ai-topic-list">
+              <li>
+                <strong>メモリ機能をオンにする</strong> ── AIが前に話したことを覚えてくれるので、毎回自己紹介しなくてOK。
+              </li>
+              <li>
+                <strong>音声で話しかける</strong> ── 頭の中のモヤモヤをとりあえずしゃべって、AIにまとめてもらおう。
+              </li>
+              <li>
+                <strong>日常に溶け込ませる</strong> ── 健康相談、スケジュール管理、勉強のサポートなど、生活のあらゆる場面で使おう。
+              </li>
+            </ul>
+            <div class="ai-topic-tip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>ポイント：AIに自分を覚えてもらうほど、答えの質がアップする！</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- トピック3: プロンプトの基本テクニック -->
+        <div class="ai-topic-card fade-in-item">
+          <div class="ai-topic-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <div class="ai-topic-content">
+            <h3>💬 プロンプトの基本テクニック</h3>
+            <p class="ai-topic-summary">
+              AIへの「質問の仕方」を少し工夫するだけで、返ってくる答えがグッと良くなります。
+              難しいことは必要なし！この3つだけ覚えよう。
+            </p>
+            <ul class="ai-topic-list">
+              <li>
+                <strong>「中学生にもわかるように説明して」</strong> ── 難しい話でもカンタンな言葉で教えてくれるようになる魔法のフレーズ。
+              </li>
+              <li>
+                <strong>「反論を3つ述べて」</strong> ── AIはつい褒めてくるけど、あえてダメ出しをお願いすると、自分の考えがもっと強くなる。
+              </li>
+              <li>
+                <strong>「ここまでの内容をまとめて」</strong> ── 長い会話をスッキリ整理。ノートに貼れる形で出してくれて超便利。
+              </li>
+            </ul>
+            <div class="ai-topic-tip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>ポイント：質問の仕方を変えるだけで、AIの答えが10倍わかりやすくなる！</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴セクション -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">— Features —</span>
+        <h2 class="section-title">この図書館の特徴</h2>
+        <p class="section-desc">知識を効率よく探索・活用するための仕組み。</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item fade-in-item">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>横断検索</h3>
+          <p>全カテゴリを横断してキーワード検索。必要な知識に素早くアクセス。</p>
+        </div>
+        <div class="feature-item fade-in-item">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>体系的整理</h3>
+          <p>カテゴリ→トピック→記事の三層構造で情報を体系的に管理。</p>
+        </div>
+        <div class="feature-item fade-in-item">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>定期更新</h3>
+          <p>最新トレンドに合わせて常にアップデート。鮮度の高い情報を提供。</p>
+        </div>
+        <div class="feature-item fade-in-item">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>レスポンシブ</h3>
+          <p>PC・タブレット・スマートフォン、どのデバイスでも快適に閲覧。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aboutセクション -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label">— About —</span>
+          <h2 class="section-title">この図書館について</h2>
+          <p class="about-text">
+            「AI仙人の知識図書館」は、日々の学びと発見を整理・蓄積するためのデジタルアーカイブです。
+            AI技術の進化、投資の知恵、Macの活用法、そして読書から得た洞察──
+            多彩な知識を一つの場所に集め、いつでも振り返れるようにしました。
+          </p>
+          <div class="about-philosophy">
+            <div class="philosophy-item fade-in-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <div>
+                <strong>知識は共有してこそ価値がある</strong>
+                <span>学んだことを記録し、誰かの気づきに繋げたい。</span>
+              </div>
+            </div>
+            <div class="philosophy-item fade-in-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong>継続は力なり</strong>
+                <span>毎日少しずつ積み上げる知識が、やがて大きな力になる。</span>
+              </div>
+            </div>
+            <div class="philosophy-item fade-in-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              <div>
+                <strong>好奇心を忘れない</strong>
+                <span>新しい分野に触れることが、最高の自己投資。</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat fade-in-item">
+              <div class="stat-number" data-target="4">0</div>
+              <div class="stat-label">カテゴリ</div>
+            </div>
+            <div class="stat fade-in-item">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">知識の泉</div>
+            </div>
+            <div class="stat fade-in-item">
+              <div class="stat-number" data-target="365">0</div>
+              <div class="stat-label">日々更新</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in-item">
+          <div class="book-stack">
+            <div class="book book-1"><span>AI</span></div>
+            <div class="book book-2"><span>投資</span></div>
+            <div class="book book-3"><span>Mac</span></div>
+            <div class="book book-4"><span>読書</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span class="logo-text">AI仙人の知識図書館</span>
+        </div>
+        <p class="footer-quote">「知は力なり」── フランシス・ベーコン</p>
+        <div class="footer-links">
+          <a href="#hero">トップ</a>
+          <a href="#categories">カテゴリ</a>
+          <a href="#features">特徴</a>
+          <a href="#about">概要</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-updated">最終更新：<time datetime="2026-05-18">2026年5月18日</time></p>
+        <p class="footer-copyright">&copy; 2026 AI仙人の知識図書館. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
